@@ -22,7 +22,7 @@ function count()
  var seconds = today.getSeconds();
  if (seconds<10) hour="0"+seconds;
 
- document.getElementById("timer").innerHTML = day+"/"+month+"/"+rok+" | "+hour+":"+minute+":"+seconds;
+ document.getElementById("timer").innerHTML = day+"/"+month+"/"+year+" | "+hour+":"+minute+":"+seconds;
 
  setTimeout("count()",1000);
 }
@@ -40,7 +40,8 @@ function count()
 </head>
 
 <body onload=count()>
-<p id="timer">a</p>
+
+ <p id="timer">a</p>
 
   <h1> gowno </h1>
 
